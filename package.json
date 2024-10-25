@@ -1,0 +1,17 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "dev": "node client.js"
+  },
+  "dependencies": {
+    "@contentful/rich-text-html-renderer": "^16.6.10",
+    "contentful": "^11.1.4",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

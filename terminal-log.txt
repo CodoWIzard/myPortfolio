@@ -1,0 +1,669 @@
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ contentful
+
+Usage: contentful <cmd> [args]
+
+Commands:
+  config        Manage and list your configs
+  content-type  Manage and list your space content types           [aliases: ct]
+  extension     Manage and list your extensions
+  feedback      Send feedback to Contentful
+  init          Get started with Contentful
+  login         Login to Contentful
+  logout        Logout from Contentful
+  merge         A CLI version of the Merge app
+  organization  Manage and list your organizations
+  space         Manage and list your spaces
+
+Options:
+  -h, --help     Show help                                             [boolean]
+  -v, --version  Show current version                                  [boolean]
+
+Copyright 2024 Contentful
+Please specify a command.
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ contentful login
+
+A browser window will open where you will log in (or sign up if you don’t have an account), authorize this CLI tool and paste your CMA token here:
+
+? Continue login on the browser? Yes
+? Paste your token here: *******************************************
+
+Great! You've successfully logged in!
+╭─────────────────────────────────────────────────────────────────────────╮
+│                                                                         │
+│   Your management token: R9NID6fPRJGTRtD38BRuUpgZtdzWTq-7TJ37WJhHOpg    │
+│   Stored at: C:\Users\jayde\.contentfulrc.json                          │
+│                                                                         │
+╰─────────────────────────────────────────────────────────────────────────╯
+Have any feedback for the Contentful CLI? We'd love to hear from you! Check out our five question developer experience survey at:
+  https://87dc93gvoy0.typeform.com/to/d1RgWfZX
+
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ cat /Users/jayde/.contentfulrc.json
+cat: /Users/jayde/.contentfulrc.json: No such file or directory
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ cat /Users/jayden/.contentfulrc.json
+cat: /Users/jayden/.contentfulrc.json: No such file or directory
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ contentful boilerplate
+
+Usage: contentful <cmd> [args]
+
+Commands:
+  config        Manage and list your configs
+  content-type  Manage and list your space content types           [aliases: ct]
+  extension     Manage and list your extensions
+  feedback      Send feedback to Contentful
+  init          Get started with Contentful
+  login         Login to Contentful
+  logout        Logout from Contentful
+  merge         A CLI version of the Merge app
+  organization  Manage and list your organizations
+  space         Manage and list your spaces
+
+Options:
+  -h, --help     Show help                                             [boolean]
+  -v, --version  Show current version                                  [boolean]
+
+Copyright 2024 Contentful
+Please specify a command.
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ contentful guide
+
+Usage: contentful <cmd> [args]
+
+Commands:
+  config        Manage and list your configs
+  content-type  Manage and list your space content types           [aliases: ct]
+  extension     Manage and list your extensions
+  feedback      Send feedback to Contentful
+  init          Get started with Contentful
+  login         Login to Contentful
+  logout        Logout from Contentful
+  merge         A CLI version of the Merge app
+  organization  Manage and list your organizations
+  space         Manage and list your spaces
+
+Options:
+  -h, --help     Show help                                             [boolean]
+  -v, --version  Show current version                                  [boolean]
+
+Copyright 2024 Contentful
+Please specify a command.
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ contentful init
+
+
+╭ Welcome to Contentful ───────────────────────────────────────────────────────╮│                                                                              ││   Launch your projects faster with modern content platform!                  ││   Start building and enable your content editors and codebase with           ││   powerful tools!                                                            ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+? Do you want to create a new space or use an existing one? Create new space
+? What should be the name for the new created space? jaydenportfolio
+? Do you want to have example content in jaydenportfolio? Yes
+Please be aware that adding new spaces to your subscription,
+beyond the free ‘Micro’ space included in each subscription,
+will result in extra monthly charges.
+More information on available space types and their prices can be found on
+the Pricing page: https://www.contentful.com/pricing/?faq_category=payments&faq=what-type-of-spaces-can-i-have#what-type-of-spaces-can-i-have
+? Do you want to confirm the space creation? Yes
+
+  Error: SpaceManagement::CreateSpace::LicenseNotFoundError
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ {                                                                            │
+│   "status": 422,                                                             │
+│   "statusText": "Unprocessable Entity",                                      │
+│   "message": "SpaceManagement::CreateSpace::LicenseNotFoundError",           │
+│   "details": {},                                                             │
+│   "request": {                                                               │
+│     "url": "/spaces",                                                        │
+│     "headers": {                                                             │
+│       "Accept": "application/json, text/plain, */*",                         │
+│       "Content-Type": "application/vnd.contentful.management.v1+json",       │
+│       "X-Contentful-User-Agent": "app contentful.cli/3.3.15; feature         │
+│ space-create; sdk contentful-management.js/11.35.1; platform node.js/v20.14… │
+│  os Windows/v20.14.0;",                                                      │
+│       "Authorization": "Bearer ...hHOpg",                                    │
+│       "User-Agent": "axios/1.7.7",                                           │
+│       "Content-Length": "26",                                                │
+│       "Accept-Encoding": "gzip, compress, deflate, br"                       │
+│     },                                                                       │
+│     "method": "post",                                                        │
+│     "payloadData": "{\"name\":\"jaydenportfolio\"}"                          │
+│   },                                                                         │
+│   "requestId": "03248855-a247-49da-967e-2efdac1cb7bf"                        │
+│ }                                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ ^C
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ contentful init
+
+
+╭ Welcome to Contentful ───────────────────────────────────────────────────────╮│                                                                              ││   Launch your projects faster with modern content platform!                  ││   Start building and enable your content editors and codebase with           ││   powerful tools!                                                            ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+? Do you want to create a new space or use an existing one? Use existing space
+👀 Please select a space: Blank (knr5qdaftzxd)
+👓 How would you like to consume content in your code? JS Client
+
+-----Try your first request-------------------------------------------------------
+
+    import contentful from "contentful";
+
+    const client = contentful.createClient({
+      space: "knr5qdaftzxd",
+      accessToken: "zpG-ODHd2zu_sbxV2UT1HfHPFh3vSBK0W3QluFpY8co"
+    });
+
+    client.getEntries()
+      .then((response) => console.log(response.items))
+      .catch(console.error)
+
+----------------------------------------------------------------------------------
+
+Learn more about Content Delivery API JS client library: https://www.contentful.com/developers/docs/javascript/sdks
+
+Share your feedback for this CLI: https://contentful.typeform.com/contentful-cli
+
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ contentful init
+
+
+╭ Welcome to Contentful ───────────────────────────────────────────────────────╮│                                                                              ││   Launch your projects faster with modern content platform!                  ││   Start building and enable your content editors and codebase with           ││   powerful tools!                                                            ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+? Do you want to create a new space or use an existing one? Create new space
+? What should be the name for the new created space? portfoliojayden
+? Do you want to have example content in portfoliojayden? Yes
+Please be aware that adding new spaces to your subscription,
+beyond the free ‘Micro’ space included in each subscription,
+will result in extra monthly charges.
+More information on available space types and their prices can be found on
+the Pricing page: https://www.contentful.com/pricing/?faq_category=payments&faq=what-type-of-spaces-can-i-have#what-type-of-spaces-can-i-have
+? Do you want to confirm the space creation? Yes
+
+  Error: SpaceManagement::CreateSpace::LicenseNotFoundError
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ {                                                                            │
+│   "status": 422,                                                             │
+│   "statusText": "Unprocessable Entity",                                      │
+│   "message": "SpaceManagement::CreateSpace::LicenseNotFoundError",           │
+│   "details": {},                                                             │
+│   "request": {                                                               │
+│     "url": "/spaces",                                                        │
+│     "headers": {                                                             │
+│       "Accept": "application/json, text/plain, */*",                         │
+│       "Content-Type": "application/vnd.contentful.management.v1+json",       │
+│       "X-Contentful-User-Agent": "app contentful.cli/3.3.15; feature         │
+│ space-create; sdk contentful-management.js/11.35.1; platform node.js/v20.14… │
+│  os Windows/v20.14.0;",                                                      │
+│       "Authorization": "Bearer ...hHOpg",                                    │
+│       "User-Agent": "axios/1.7.7",                                           │
+│       "Content-Length": "26",                                                │
+│       "Accept-Encoding": "gzip, compress, deflate, br"                       │
+│     },                                                                       │
+│     "method": "post",                                                        │
+│     "payloadData": "{\"name\":\"portfoliojayden\"}"                          │
+│   },                                                                         │
+│   "requestId": "a20198d3-3344-4578-b7ae-d5c331e60cf9"                        │
+│ }                                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ contentful init
+
+
+╭ Welcome to Contentful ───────────────────────────────────────────────────────╮│                                                                              ││   Launch your projects faster with modern content platform!                  ││   Start building and enable your content editors and codebase with           ││   powerful tools!                                                            ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+? Do you want to create a new space or use an existing one? Use existing space
+👀 Please select a space: Blank (knr5qdaftzxd)
+👓 How would you like to consume content in your code? JS Client
+
+-----Try your first request-------------------------------------------------------
+
+    import contentful from "contentful";
+
+    const client = contentful.createClient({
+      space: "knr5qdaftzxd",
+      accessToken: "zpG-ODHd2zu_sbxV2UT1HfHPFh3vSBK0W3QluFpY8co"
+    });
+
+    client.getEntries()
+      .then((response) => console.log(response.items))
+      .catch(console.error)
+
+----------------------------------------------------------------------------------
+
+Learn more about Content Delivery API JS client library: https://www.contentful.com/developers/docs/javascript/sdks
+
+Share your feedback for this CLI: https://contentful.typeform.com/contentful-cli
+
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ npm run dev
+npm error code ENOENT
+npm error syscall open
+npm error path C:\Users\jayde\package.json
+npm error errno -4058
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\jayde\package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\jayde\AppData\Local\npm-cache\_logs\2024-10-20T20_34_41_277Z-debug-0.log
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ NODE_ENV=development node app.js
+node:internal/modules/cjs/loader:1148
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\jayde\app.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Module._load (node:internal/modules/cjs/loader:986:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_ma
+in:174:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.14.0
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ npm run dev
+npm error code ENOENT
+npm error syscall open
+npm error path C:\Users\jayde\package.json
+npm error errno -4058
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\jayde\package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\jayde\AppData\Local\npm-cache\_logs\2024-10-20T20_37_19_745Z-debug-0.log
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ NODE_ENV=development node client.js
+node:internal/modules/cjs/loader:1148
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\jayde\client.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Module._load (node:internal/modules/cjs/loader:986:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_ma
+in:174:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.14.0
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ npm run dev
+npm error code ENOENT
+npm error syscall open
+npm error path C:\Users\jayde\package.json
+npm error errno -4058
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\jayde\package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\jayde\AppData\Local\npm-cache\_logs\2024-10-20T20_37_47_228Z-debug-0.log
+
+jayde@Laptop-Chan MINGW64 ~ (master)
+$ cd /c/xampp/htdocs/contentfulport
+
+jayde@Laptop-Chan MINGW64 /c/xampp/htdocs/contentfulport
+$ npm run dev
+
+> your-project-name@1.0.0 dev
+> node client.js
+
+[
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '2YICrkxeMXd7zADk4RUb5H',
+      type: 'Entry',
+      createdAt: '2024-10-14T09:06:45.474Z',
+      updatedAt: '2024-10-14T09:06:45.474Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: {
+      title: 'Infographic',
+      slug: 'infographic',
+      gitHubLink: 'https://github.com/GLU-CSD/web-weekopdracht-3-infographic-CodoWIzard',
+      image: [Object],
+      shortDescription: 'My infographic about Japan travels!',
+      longDescription: [Object]
+    }
+  },
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '2KLTKX43Z9Kg3eNxZOFIyH',
+      type: 'Entry',
+      createdAt: '2024-10-14T09:04:05.718Z',
+      updatedAt: '2024-10-14T09:04:05.718Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: {
+      title: 'webshop-supplements',
+      slug: 'webshop-supplements',
+      gitHubLink: 'https://github.com/GLU-CSD/weekopdrachten-webshop-dynamisch-CodoWIzard',
+      image: [Object],
+      shortDescription: 'A project I like showcasing!',
+      longDescription: [Object]
+    }
+  }
+]
+{
+  sys: { type: 'Array' },
+  total: 4,
+  skip: 0,
+  limit: 100,
+  items: [
+    { metadata: [Object], sys: [Object], fields: [Object] },
+    { metadata: [Object], sys: [Object], fields: [Object] },
+    { metadata: [Object], sys: [Object], fields: [Object] },
+    { metadata: [Object], sys: [Object], fields: [Object] }
+  ],
+  includes: { Asset: [ [Object], [Object] ] }
+}
+Total entries: 4
+[
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '2YICrkxeMXd7zADk4RUb5H',
+      type: 'Entry',
+      createdAt: '2024-10-14T09:06:45.474Z',
+      updatedAt: '2024-10-14T09:06:45.474Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: {
+      title: 'Infographic',
+      slug: 'infographic',
+      gitHubLink: 'https://github.com/GLU-CSD/web-weekopdracht-3-infographic-CodoWIzard',
+      image: [Object],
+      shortDescription: 'My infographic about Japan travels!',
+      longDescription: [Object]
+    }
+  },
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '2KLTKX43Z9Kg3eNxZOFIyH',
+      type: 'Entry',
+      createdAt: '2024-10-14T09:04:05.718Z',
+      updatedAt: '2024-10-14T09:04:05.718Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: {
+      title: 'webshop-supplements',
+      slug: 'webshop-supplements',
+      gitHubLink: 'https://github.com/GLU-CSD/weekopdrachten-webshop-dynamisch-CodoWIzard',
+      image: [Object],
+      shortDescription: 'A project I like showcasing!',
+      longDescription: [Object]
+    }
+  },
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '3M8dyzzf0KJNQNsIV5akH7',
+      type: 'Entry',
+      createdAt: '2024-10-14T08:55:44.237Z',
+      updatedAt: '2024-10-14T08:55:44.237Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: { title: 'About me', description: [Object] }
+  },
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '1NAskpqllNufef2fGBi6AH',
+      type: 'Entry',
+      createdAt: '2024-10-14T08:52:37.886Z',
+      updatedAt: '2024-10-14T08:52:37.886Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: { title: 'Jayden', subtitle: 'Student web developer!' }
+  }
+]
+
+jayde@Laptop-Chan MINGW64 /c/xampp/htdocs/contentfulport
+$ node client.js
+[
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '2YICrkxeMXd7zADk4RUb5H',
+      type: 'Entry',
+      createdAt: '2024-10-14T09:06:45.474Z',
+      updatedAt: '2024-10-14T09:06:45.474Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: {
+      title: 'Infographic',
+      slug: 'infographic',
+      gitHubLink: 'https://github.com/GLU-CSD/web-weekopdracht-3-infographic-Cod
+oWIzard',
+      image: [Object],
+      shortDescription: 'My infographic about Japan travels!',
+      longDescription: [Object]
+    }
+  },
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '2KLTKX43Z9Kg3eNxZOFIyH',
+      type: 'Entry',
+      createdAt: '2024-10-14T09:04:05.718Z',
+      updatedAt: '2024-10-14T09:04:05.718Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: {
+      title: 'webshop-supplements',
+      slug: 'webshop-supplements',
+      gitHubLink: 'https://github.com/GLU-CSD/weekopdrachten-webshop-dynamisch-C
+odoWIzard',
+      image: [Object],
+      shortDescription: 'A project I like showcasing!',
+      longDescription: [Object]
+    }
+  }
+]
+{
+  sys: { type: 'Array' },
+  total: 4,
+  skip: 0,
+  limit: 100,
+  items: [
+    { metadata: [Object], sys: [Object], fields: [Object] },
+    { metadata: [Object], sys: [Object], fields: [Object] },
+    { metadata: [Object], sys: [Object], fields: [Object] },
+    { metadata: [Object], sys: [Object], fields: [Object] }
+  ],
+  includes: { Asset: [ [Object], [Object] ] }
+}
+Total entries: 4
+[
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '2YICrkxeMXd7zADk4RUb5H',
+      type: 'Entry',
+      createdAt: '2024-10-14T09:06:45.474Z',
+      updatedAt: '2024-10-14T09:06:45.474Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: {
+      title: 'Infographic',
+      slug: 'infographic',
+      gitHubLink: 'https://github.com/GLU-CSD/web-weekopdracht-3-infographic-Cod
+oWIzard',
+      image: [Object],
+      shortDescription: 'My infographic about Japan travels!',
+      longDescription: [Object]
+    }
+  },
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '2KLTKX43Z9Kg3eNxZOFIyH',
+      type: 'Entry',
+      createdAt: '2024-10-14T09:04:05.718Z',
+      updatedAt: '2024-10-14T09:04:05.718Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: {
+      title: 'webshop-supplements',
+      slug: 'webshop-supplements',
+      gitHubLink: 'https://github.com/GLU-CSD/weekopdrachten-webshop-dynamisch-C
+odoWIzard',
+      image: [Object],
+      shortDescription: 'A project I like showcasing!',
+      longDescription: [Object]
+    }
+  },
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '3M8dyzzf0KJNQNsIV5akH7',
+      type: 'Entry',
+      createdAt: '2024-10-14T08:55:44.237Z',
+      updatedAt: '2024-10-14T08:55:44.237Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: { title: 'About me', description: [Object] }
+  },
+  {
+    metadata: { tags: [], concepts: [] },
+    sys: {
+      space: [Object],
+      id: '1NAskpqllNufef2fGBi6AH',
+      type: 'Entry',
+      createdAt: '2024-10-14T08:52:37.886Z',
+      updatedAt: '2024-10-14T08:52:37.886Z',
+      environment: [Object],
+      revision: 1,
+      contentType: [Object],
+      locale: 'en-US'
+    },
+    fields: { title: 'Jayden', subtitle: 'Student web developer!' }
+  }
+]
+
+jayde@Laptop-Chan MINGW64 /c/xampp/htdocs/contentfulport
+$ node client.js
+node:internal/modules/cjs/loader:1148
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- C:\xampp\htdocs\contentfulport\client.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Module._load (node:internal/modules/cjs/loader:986:27)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\xampp\htdocs\contentfulport\client.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_ma
+in:174:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'C:\\xampp\\htdocs\\contentfulport\\client.js' ]
+}
+
+Node.js v20.14.0
+
+jayde@Laptop-Chan MINGW64 /c/xampp/htdocs/contentfulport
+$ npm install express
+
+added 48 packages, and audited 87 packages in 2s
+
+16 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+jayde@Laptop-Chan MINGW64 /c/xampp/htdocs/contentfulport
+$ node client.js
+Server is running at http://localhost:3000
+
+jayde@Laptop-Chan MINGW64 /c/xampp/htdocs/contentfulport
+$ node client.js > terminal-log.txt 2>&1
+
+jayde@Laptop-Chan MINGW64 /c/xampp/htdocs/contentfulport
+$ node client.js > terminal-log.txt 2>&1
+
+jayde@Laptop-Chan MINGW64 /c/xampp/htdocs/contentfulport
+$ node client.js > terminal-log.txt
+stdout is not a tty
+
+jayde@Laptop-Chan MINGW64 /c/xampp/htdocs/contentfulport
+$ script terminal-session.log
+bash: script: command not found
+
+jayde@Laptop-Chan MINGW64 /c/xampp/htdocs/contentfulport
+$ ^C
+
+jayde@Laptop-Chan MINGW64 /c/xampp/htdocs/contentfulport
+$
